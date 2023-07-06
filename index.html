@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RevoU Fundamental Course</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="asset/revou.png" alt="Logo" />
+        </div>
+        <div class="menu-bar">
+          <button onclick="toggleNavbar()">
+            <i></i>
+          </button>
+        </div>
+        <nav class="navbar" id="navbar">
+          <div class="close-nav">
+            <button onclick="toggleNavbar()">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#our_package">Our Package</a></li>
+            <li><a href="#callus">Call Us</a></li>
+        </nav>
+      </div>
+    </header>
+
+    <sectiion id="main">
+      <div class="container">
+        <div class="banner-slider">
+          <div class="banner-slide">
+            <img src="asset/banner-4.jpg" alt="Gambar 1" />
+            <div class="banner-caption">Top Rated E-Groceries shop in Indonesian</div>
+          </div>
+          <div class="banner-slide">
+            <img src="asset/banner-2.jpg" alt="Gambar 2" />
+            <div class="banner-caption">Best Ingredients Every Day</div>
+          </div>
+          <div class="banner-slide">
+            <img src="asset/banner-3.jpg" alt="Gambar 3" />
+            <div class="banner-caption">Shop Now</div>
+          </div>
+        </div>      
+      </div>
+  
+      <div class="container">
+        <div class="left-section">
+          <img src="asset/banner.jpg" alt="Gambar" />
+          <p>
+            "Setiap hari beli sayur buah yang fresh disini"
+          </p>
+          <div class="profile-container">
+            <div class="profile-picture">
+              <img src="https://picsum.photos/200" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+              <h2 class="profile-name">Florence Hughes</h2>
+              <p class="profile-description">Ibu Rumah Tangga, 28</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Contact Us</h2>
+          <p>sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+          <form name="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          
+            <label for="message">Interest:</label>
+            <select id="message" name="message" required>
+              <option value="">Select Interest</option>
+              <option value="vegetables">Vegetables</option>
+              <option value="fruits">Fruits</option>
+              <option value="kitchen set">Kitchen Set</option>
+              <option value="kitchen ingredients">Kitchen Ingredients</option>
+            </select>
+          
+            <input type="submit" value="SEND" />
+          </form>
+        </div>
+      </div>
+    </sectiion>
+
+    <section id="coupon">
+      <div class="coupon-container">
+        <div class="coupon">
+          <div class="coupon-image">
+            <img src="asset/discount.png" alt="Coupon Image 1">
+          </div>
+          <div class="coupon-details">
+            <h3 class="coupon-name">Kupon 30%</h3>
+            <p class="coupon-description">Klaim Sekarang !</p>
+            <button class="claim-button">Claim</button>
+          </div>
+        </div>
+        <div class="coupon">
+          <div class="coupon-image">
+            <img src="asset/discount.png" alt="Coupon Image 2">
+          </div>
+          <div class="coupon-details">
+            <h3 class="coupon-name">Kupon Diskon 50%</h3>
+            <p class="coupon-description">Klaim Sekarang !</p>
+            <button class="claim-button">Claim</button>
+          </div>
+        </div>
+        <div class="coupon">
+          <div class="coupon-image">
+            <img src="asset/cashback.jpg" alt="Coupon Image 3">
+          </div>
+          <div class="coupon-details">
+            <h3 class="coupon-name">Kupon Cashback 50%</h3>
+            <p class="coupon-description">Klaim Sekarang !</p>
+            <button class="claim-button">Claim</button>
+          </div>
+        </div>
+      </div>        
+    </section>
+
+    <section id="our_package">
+      <div class="container">
+        <div class="banner">
+          <h1>Our Package</h1>
+        </div>
+      </div>
+      <div class="feature-container">
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="asset/vegetables.jpg" alt="Feature Icon">
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-name">Fresh Vegetables</h3>
+            <p class="feature-description">Sayuran segar langsung dari sumber pertanian terbaik</p>
+          </div>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="asset/fresh-fruits.jpg" alt="Feature Icon">
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-name">Fresh Fruit</h3>
+            <p class="feature-description">Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+          </div>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="asset/instant-delivery.png" alt="Feature Icon">
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-name">Instant Delivery</h3>
+            <p class="feature-description">DI kirim instan oleh kurir yang telah di training dengan sop untuk menjaga kondisi belanja kamu</p>
+          </div>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="asset/kitchen ingredients.jpg" alt="Feature Icon">
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-name">Kitchen Ingredients</h3>
+            <p class="feature-description">Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+          </div>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="asset/alat dapur.jpg" alt="Feature Icon">
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-name">Kitchen Set</h3>
+            <p class="feature-description">Segala jenis alat masak untuk membantu kamu memasak</p>
+          </div>
+        </div>
+      
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="asset/bundling set.jpg" alt="Feature Icon">
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-name">Bundling Set</h3>
+            <p class="feature-description">Bingung masak apa ? sudah tersedia paket untuk masak di dapur kamu</p>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section id="callus">
+        <div class="container">
+          <div class="banner">
+            <h1>Your Closing Argument Here</h1>
+            <h4>Suspendisse egestas rhocus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla</h4>
+            <button class="custom-button">Call to Action</button>
+          </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <img src="asset/revou.png" alt="Logo" />
+        <h6>Terms of services  Privacy policy</h6>
+    </section>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
